@@ -7,7 +7,10 @@ const Card = () => {
 			<section className='card-header'>
 				<img src={equilibrium} alt='Equilibrium' className='img' />
 			</section>
-			<section className='card-header'>
+			<section className='card-body'>
+				<p></p>
+			</section>
+			<section className='card-footer'>
 				<p></p>
 			</section>
 		</div>
