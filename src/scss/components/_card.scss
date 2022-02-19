@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+.card {
+	width: 327px;
+	max-width: $fixedWidth;
+	@include grid(center);
+	background-color: $cardBG;
+	border-radius: $borderRadius-1;
+	padding: 1.53rem;
+
+	.card-header {
+		@include grid(center);
+		width: 278px;
+		height: 278px;
+	}
+
+	.card-body {
+	}
+	.card-footer {
+	}
+}

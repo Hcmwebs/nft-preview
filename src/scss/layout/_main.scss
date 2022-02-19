@@ -4,6 +4,6 @@
 .container {
 	width: 100%;
 	max-width: $maxWidth;
-	padding: 4rem 1.25rem;
+	padding: 4rem 1.5rem;
 	@include grid(center);
 }
