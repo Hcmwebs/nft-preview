@@ -1,1 +1,9 @@
 @use '../abstracts' as *;
+@use '../base/typo' as *;
+
+.container {
+	width: 100%;
+	max-width: $maxWidth;
+	padding: 0rem 1.25rem;
+	@include grid(center);
+}
