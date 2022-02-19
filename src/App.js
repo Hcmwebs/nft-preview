@@ -4,7 +4,7 @@ import Card from './Components/Card';
 
 const App = () => {
 	return (
-		<main>
+		<main className='container'>
 			<Card />
 			<Attributions />
 		</main>
