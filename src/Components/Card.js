@@ -8,9 +8,9 @@ const Card = () => {
 	return (
 		<div className='card'>
 			<section className='card-header'>
-				<button className='btn'>
+				<div className='imgContainer'>
 					<img src={equilibrium} alt='Equilibrium' className='img' />
-				</button>
+				</div>
 			</section>
 			<section className='card-body'>
 				<h1>Equilibrium #3429</h1>
