@@ -1,21 +1,15 @@
 import React, { useState } from 'react';
-import equilibrium from '../images/image-equilibrium.jpg';
-import ethereum from '../images/icon-ethereum.svg';
-import clock from '../images/icon-clock.svg';
-import avatar from '../images/image-avatar.png';
+import CardFooter from './CardFooter';
+import CardHeader from './CardHeader';
 
-const Card = () => {
+const Card = ({ equilibrium, ethereum, clock, avatar }) => {
 	const [active, setActive] = useState(false);
 	return (
 		<div
 			className='card'
 			onMouseEnter={() => setActive(true)}
 			onMouseLeave={() => setActive(false)}>
-			<section className='card-header'>
-				<div className={active ? 'imgContainer active' : 'imgContainer'}>
-					<img src={equilibrium} alt='Equilibrium' className='img' />
-				</div>
-			</section>
+			<CardHeader active={active} equilibrium={equilibrium} />
 			<section className='card-body'>
 				<h1 className={active ? 'active ' : ''}>Equilibrium #3429</h1>
 				<p>Our Equilibrium collection promotes balance and calm.</p>
@@ -30,10 +24,7 @@ const Card = () => {
 				</div>
 			</section>
 			<div className='card-underline'></div>
-			<section className='card-footer'>
-				<img src={avatar} alt='avatar' className='img' />
-				<p>Creation of Jules Wyvern</p>
-			</section>
+			<CardFooter avatar={avatar} />
 		</div>
 	);
 };
