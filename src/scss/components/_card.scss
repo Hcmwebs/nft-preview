@@ -48,11 +48,16 @@
 		width: 100%;
 		@include grid(center);
 		gap: 1.5rem;
+
 		h1 {
 			font-size: 22px;
 			justify-self: flex-start;
 			color: $white;
 			margin: 0;
+			transition: $transition-3;
+			&.active {
+				color: $cyan;
+			}
 		}
 
 		p {
@@ -91,7 +96,7 @@
 	}
 	.card-footer {
 		width: 100%;
-		@include flex(row, start, center);
+		@include flex(row, flex-start, center);
 		gap: 1rem;
 
 		.img {
