@@ -8,6 +8,7 @@
 	background-color: $cardBG;
 	border-radius: $borderRadius-1;
 	padding: 1.53rem;
+	transition: $transition-3;
 
 	.card-header {
 		@include grid(center);
@@ -23,7 +24,6 @@
 			outline: none;
 			overflow: hidden;
 			position: relative;
-			transition: $transition-5;
 
 			&::after {
 				content: '';
@@ -54,7 +54,6 @@
 			justify-self: flex-start;
 			color: $white;
 			margin: 0;
-			transition: $transition-3;
 			&.active {
 				color: $cyan;
 			}
@@ -110,6 +109,9 @@
 		p {
 			margin: 0;
 			justify-self: center;
+		}
+		b.active {
+			color: $cyan;
 		}
 	}
 }

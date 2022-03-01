@@ -14,7 +14,7 @@ const Card = ({ equilibrium, ethereum, clock, avatar }) => {
 			<CardHeader active={active} equilibrium={equilibrium} />
 			<CardBody active={active} ethereum={ethereum} clock={clock} />
 			<CardUnderline />
-			<CardFooter avatar={avatar} />
+			<CardFooter active={active} avatar={avatar} />
 		</div>
 	);
 };

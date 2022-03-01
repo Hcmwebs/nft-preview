@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CardBody = ({active,ethereum,clock}) => {
+const CardBody = ({ active, ethereum, clock }) => {
 	return (
 		<section className='card-body'>
 			<h1 className={active ? 'active ' : ''}>Equilibrium #3429</h1>
