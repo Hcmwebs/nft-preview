@@ -5,16 +5,19 @@ import clock from '../images/icon-clock.svg';
 import avatar from '../images/image-avatar.png';
 
 const Card = () => {
-	const [isActive, setIsActive] = useState(false);
+	const [active, setActive] = useState(false);
 	return (
-		<div className='card'>
+		<div
+			className='card'
+			onMouseEnter={() => setActive(true)}
+			onMouseLeave={() => setActive(false)}>
 			<section className='card-header'>
-				<div className='imgContainer' onClick={() => setIsActive(!isActive)}>
+				<div className={active ? 'imgContainer active' : 'imgContainer'}>
 					<img src={equilibrium} alt='Equilibrium' className='img' />
 				</div>
 			</section>
 			<section className='card-body'>
-				<h1>Equilibrium #3429</h1>
+				<h1 className={active ? 'active ' : ''}>Equilibrium #3429</h1>
 				<p>Our Equilibrium collection promotes balance and calm.</p>
 				<div className='preview'>
 					<button className='btn btn-currency' type='button'>
