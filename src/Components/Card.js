@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import equilibrium from '../images/image-equilibrium.jpg';
 import ethereum from '../images/icon-ethereum.svg';
 import clock from '../images/icon-clock.svg';
 import avatar from '../images/image-avatar.png';
 
 const Card = () => {
+	const [isActive, setIsActive] = useState(false);
 	return (
 		<div className='card'>
 			<section className='card-header'>
-				<div className='imgContainer'>
+				<div className='imgContainer' onClick={() => setIsActive(!isActive)}>
 					<img src={equilibrium} alt='Equilibrium' className='img' />
 				</div>
 			</section>
