@@ -4,9 +4,9 @@ const CardFooter = ({ active, avatar }) => {
 	return (
 		<section className='card-footer'>
 			<img src={avatar} alt='avatar' className='img' />
-			<p>
+			<h4>
 				Creation of <b className={active ? 'active ' : ''}>Jules Wyvern</b>
-			</p>
+			</h4>
 		</section>
 	);
 };
